@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptadortxt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main class="all__contenido">
+        <div>
+            <img class="logo_alura" src="img/alura_logo.svg" alt="logo de alura">
+        </div>
+        <div class="contenido__usuario">
+            <textarea class="txt__usuario" id="txtusuario" placeholder="Ingrese texto aquí"></textarea>
+            <p class="msj__recomendacion"><img class="img__advertencia" src="img/adventencia.png" alt="signo adveterncia">Solo letras minúsculas y sin acentos</p>
+            <div class="btns__interaccion">
+                <button class="btn__encriptar" onclick="encriptar()" type="button">Encripatar</button>
+                <button class="btn__desencriptar" onclick="desencriptar()" type="button">Desencriptar</button>
+            </div>
+        </div>
+        <div class="txt__resultado" id="txtresultado">
+            <div class="txt__resultado__no__texto">
+                <img class="img__pato" src="img/patogif.gif" alt="imagen del patito">
+                <h1 class="txt__resultado__titulo">Ningún mensaje fue encontrado</h1>
+                <p class="txt__resultado__error"> Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>  
+        </div>
+        <div class="txt__final" id="txtfinal">
+            <p class="txt__final__enc__o__des" id="txtresultadofinal"> </p>
+            <button class="btn__copiar" type="button" onclick="copiar()">Copiar</button>
+        </div>
+
+    </main>
+    <footer class="footer">Desarrollado por Tomás Rebolledo</footer>
+</body>
+<script src="app.js"></script>
+</html>

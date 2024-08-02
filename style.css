@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    ---color-uno: #F3F5FC;
+    ---color-dos: #0A3871;
+    ---color-tres: #6B7178;
+    ---color-cuatro: #FFFFFF;
+    ---color-cinco: #343A40;
+
+    --funete-Inter: "Inter", sans-serif; 
+
+}
+
+.logo_alura{
+    width: 31.09px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 84px;
+}
+.img__advertencia{
+    width: 16px;
+    height: 16px;
+}
+
+.img__pato{
+    width: 336px;
+    height: 304px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(---color-uno);
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.all__contenido{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenido__usuario{
+    margin-left: 240px;
+    margin-top: 168px;
+    position: absolute;
+}
+
+.txt__usuario{
+    width: 656px;
+    height: 670px;
+    background-color: var(---color-uno);
+    font-family: var(--funete-Inter);
+    font-size: 32px;
+    color: var(---color-dos);
+    border: none;
+    resize: none;
+    outline: none;
+}
+.txt__usuario::placeholder{
+    color: var(---color-dos);
+    font-size: var(--funete-Inter);
+}
+.msj__recomendacion {
+    display: flex;
+    margin-top: 13px;
+    gap: 8px;
+    font-size: 12px;
+    color: var(---color-tres);
+    font-family: var(--funete-Inter);
+}
+
+.btns__interaccion{
+    display: flex;
+    gap: 20px;
+}
+.btn__encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    background-color: var(---color-dos);
+    color: var(---color-uno);
+    font-family: var(--funete-Inter);
+    font-size: 16px;
+    border: 2px solid var(---color-dos);
+   
+}
+.btn__encriptar:hover{
+    background-color: var(---color-uno);
+    color: var(---color-dos);
+    border-color: var(---color-dos);
+}
+
+.btn__desencriptar{
+    margin-top: 16px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border-color: var(---color-dos);
+    font-family: var(--funete-Inter);
+    font-size: 16px;
+    color: var(---color-dos);
+    outline: none;
+    background-color: var(---color-uno);
+    border: 2px solid var(---color-dos);
+}
+.btn__desencriptar:hover{
+    background-color: var(---color-dos);
+    color: var(---color-uno);
+}
+
+.txt__resultado{
+    margin-left: 1000px;
+    background-color: white;
+    height: 944px;
+    width: 400px;
+    border-radius: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    display: inline;
+    background-color: var(---color-cuatro);
+    font-family: var(--funete-Inter);
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.5);
+}
+
+.txt__resultado__no__texto{
+    margin: 243px 32px 0 32px;
+    text-align: center;
+}
+
+.txt__resultado__titulo {
+    margin-top: 32px;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-family: var(--funete-Inter);
+    color: var(---color-cinco);
+}
+
+.txt__resultado__error{
+    font-size: 16px;
+    font-family: var(--funete-Inter);
+    color: var(---color-tres);
+}
+
+.txt__final{
+    margin-left: 1000px;
+    background-color: white;
+    height: 944px;
+    width: 400px;
+    border-radius: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    display: none;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.5);
+    
+}
+
+.txt__final__enc__o__des{
+    background-color: var(---color-cuatro);
+    font-family: var(--funete-Inter);
+    font-size: 24px;
+    color: var(---color-tres);
+    width: 336px;
+    height: 781px;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.btn__copiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+    align-items: flex-end;
+    position: absolute;
+    font-family: var(--funete-Inter);
+    font-size: 16px;
+    background-color: var(---color-cuatro);
+    border-color: var(---color-dos);
+    color: var(---color-dos);
+    border: 2px solid var(---color-dos);
+}
+.btn__copiar:hover{
+    background-color: var(---color-dos);
+    color: var(---color-cuatro);
+}
+
+.footer{
+    font-size: 16px;
+    font-family: var(--funete-Inter);
+    color: var(---color-dos);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .logo_alura {
+        margin-left: 40px;
+        margin-top: 74.97px;
+        width: 31.09px;
+        height: 49.03px;
+    }
+
+    .all__contenido {
+        flex-direction: column;
+        
+    }
+
+    .contenido__usuario {
+        margin-left: 40px;
+        margin-top: 117.68px;
+        position: relative;
+    }
+
+    .txt__usuario {
+        width: 688px;
+        height: 584px;
+        font-size: 32px;
+        margin-right: 40px;
+    }
+
+    .btns__interaccion{
+        display: flex;
+        gap: 20px;
+        
+    }
+    .btn__encriptar{
+        width: 332px;
+        height: 67px;
+    }
+    .btn__desencriptar {
+        width: 332px;
+        height: 67px;
+        margin-top: 16px;
+        margin-right: 40px;
+    }
+
+    .img__pato{
+        display: none;
+    }
+    
+    .txt__resultado{
+        width: 668px;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        
+    }
+    .txt__resultado__no__texto{
+        margin: 32px;
+    }
+
+    .txt__final {
+        width: 668px;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .txt__final__enc__o__des{
+        width: 624px;
+        height: auto;
+        margin: 32px 32px 32px 32px;
+    }
+
+    .btn__copiar {
+        width: 624px;
+        margin-left: 32px;
+        margin-bottom: 32px;
+        margin-right: 32px;
+        position: relative;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .logo_alura{
+        margin-top: 24px;
+        margin-left: 16px;
+    }
+
+    .contenido__usuario{
+        margin-top: 80px;
+        margin-left: 16px;
+    }
+    .txt__usuario{
+        width: 374px;
+        min-width: 189px;
+    }
+
+    .btns__interaccion{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .btn__encriptar{
+        width: 343px;
+        height: 67px;
+    }
+
+    .btn__desencriptar{
+        margin-top: 0;
+        width: 343px;
+        height: 67px;
+    }
+
+    .txt__resultado {
+        width: 343px;
+        height: 186px;
+        margin-left: 16px;
+    }
+    .txt__resultado__no__texto{
+        margin: 32px;
+    }
+    .txt__resultado__error{
+        margin-top: 16px;
+    }
+
+    .txt__final{
+        width: 343px;
+        max-height: 595px;
+        margin-left: 16px;
+    }
+
+    .txt__final__enc__o__des{
+        width: 279px;
+        max-height: 432px;
+        margin: 32px;
+    }
+
+    .btn__copiar{
+        width: 279px;
+        height: 67px;
+    }
+
+
+
+}
